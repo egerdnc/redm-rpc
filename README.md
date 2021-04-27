@@ -1,11 +1,11 @@
-# FiveM RPC library
+# RedM RPC library
 
 ## Description
-This resource is a simple [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) library for [FiveM](https://fivem.net/). It allows you to call methods on remote side and receive return values.
+This resource is a simple [RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) library for [RedM](https://redm.gg/). It allows you to call methods on remote side and receive return values.
 
 ## Installation
-1. Copy this resource to your `resources` directory. Resource name should be `fivem-rpc`.
-2. Include client_script `'@fivem-rpc/lib.lua'` in your `__resource.lua`.
+1. Copy this resource to your `resources` directory. Resource name should be `redm-rpc`.
+2. Include client_script `'@redm-rpc/lib.lua'` in your `__resource.lua`.
 
 ## Example
 ```lua
@@ -24,7 +24,7 @@ RPC.Call("getGreetingMessage", { text = "Params passed by client" }, function (m
 end)
 ```
 
-You can also do asynchronous calls inside FiveM threads:
+You can also do asynchronous calls inside RedM threads:
 ```lua
 -- client-side
 Citizen.CreateThread(function ()
@@ -33,7 +33,7 @@ Citizen.CreateThread(function ()
 end)
 ```
 
-You can find working example code in `fivem-rpc/example` folder.
+You can find working example code in `redm-rpc/example` folder.
 
 ## Usage
 
